@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/appbackground"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetailsActivity">
+
+    <ImageView
+        android:id="@+id/product_image_details"
+        android:layout_width="384dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/product_name_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_image_details"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/cartitems"
+        android:fontFamily="serif"
+        android:gravity="center_horizontal"
+        android:text="Product Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:id="@+id/layout_price"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/product_name_details">
+
+        <TextView
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="30dp"
+            android:layout_toLeftOf="@+id/etPPrice"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:textAlignment="viewEnd"
+            android:textColor="#0B0B0B"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/etPPrice"
+            android:layout_width="260dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="  Rupees per Kg /L/Piece"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_quantity"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_price">
+
+        <TextView
+            android:id="@+id/quant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:paddingStart="20dp"
+            android:text="Quanity :"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            tools:ignore="RtlCompat" />
+       <Spinner
+           android:id="@+id/spKg"
+           android:layout_width="140dp"
+           android:layout_height="match_parent"
+           android:textSize="18dp"
+           android:textStyle="bold"
+           android:textAlignment="center"
+           android:gravity="center_horizontal"
+           android:layout_marginStart="20dp"
+           android:layout_marginEnd="5dp"/>
+        <Spinner
+            android:id="@+id/spG"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="5dp"/>
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/infop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_quantity"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Order Before 6:00 AM for Morning Slot and Before 12:00 Noon for Evening Slot."
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+   <Button
+       android:id="@+id/add_to_cart"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@drawable/buttons"
+       android:layout_below="@+id/infop"
+       android:layout_marginTop="15dp"
+       android:layout_marginStart="100dp"
+       android:layout_marginEnd="100dp"
+       android:layout_marginBottom="10dp"
+       android:text="Add To Cart"
+       android:textStyle="bold"
+       android:textSize="20dp"
+       />
+</RelativeLayout>

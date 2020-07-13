@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CustomerRegister">
+    <ProgressBar
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="200dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvLoad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_horizontal"
+        android:text="Loading...please wait..."
+        android:textColor="#7B1FA2"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/appbackground"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:hint="Enter Your Name"
+            android:inputType="textPersonName"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCustMail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:hint="Enter Your Mail Id"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etCustPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etConfirmPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center_horizontal"
+            android:hint="Confirm Your Password"
+            android:inputType="textPassword"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCustRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/buttons"
+            android:drawableLeft="@drawable/register_submit"
+            android:padding="10dp"
+            android:text="register"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

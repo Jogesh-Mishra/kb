@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvRatingScale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Awesome. I love it"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:lines="5"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed-light"
+        android:gravity="center_horizontal"
+        android:hint="Type Your Feedback"
+        android:inputType="textEmailAddress"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSubmitFeedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/on_click"
+        android:text="Send Feedback"
+        android:textSize="18sp" />
+
+</LinearLayout>

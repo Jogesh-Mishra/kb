@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/appbackground"
+    tools:context=".Payment">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/cartitems"
+        android:fontFamily="serif"
+        android:text="CHOOSE PAYMENT OPTION :"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnOnline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvtitle"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/buttons"
+        android:drawableTop="@drawable/online_pay"
+        android:text="Phone Pe / GPay / PayTm"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCOD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnOnline"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/buttons"
+        android:drawableTop="@drawable/cod"
+        android:text="Cash On Delivery"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+</RelativeLayout>

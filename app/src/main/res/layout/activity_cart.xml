@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/appbackground"
+    android:layout_height="match_parent"
+    tools:context=".CartActivity">
+    <RelativeLayout
+        android:id="@+id/cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="serif"
+            android:text="TOTAL PRICE = "
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/msg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="Congratulations,your Final Order has been placed and you will recieve the same at your doorstep !"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+    
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/items"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/infotxt"
+        android:layout_above="@+id/Progress"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/appbackground"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/infotxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Rs.25 will be added if Total Price is between Rs.300-Rs.600"
+        android:textColor="@android:color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/cart_list"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="5dp"
+        />
+    <Button
+        android:id="@+id/Progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/buttons"
+        android:text="Next"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+
+</RelativeLayout>

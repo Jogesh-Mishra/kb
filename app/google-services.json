@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "11239506725",
+    "firebase_url": "https://kitchen-basket-53796.firebaseio.com",
+    "project_id": "kitchen-basket-53796",
+    "storage_bucket": "kitchen-basket-53796.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11239506725:android:ac6a38084abac2954290cc",
+        "android_client_info": {
+          "package_name": "com.kitchenbasket.kb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11239506725-m3si9k74u70u542j3ojgqavmgpcvfu96.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kitchenbasket.kb",
+            "certificate_hash": "5ee566a7f25e3833353ce4f3a6d25fb1c8777c7a"
+          }
+        },
+        {
+          "client_id": "11239506725-hk17gv6mh9tideg82552hb6bdf2v75bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuxg2WM0L-zJ-jHCYkZlM5xayiirnolVU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "11239506725-hk17gv6mh9tideg82552hb6bdf2v75bl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

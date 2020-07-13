@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/Username"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/PhoneNum"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Phone Number"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/PhoneNum"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="Total Price"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/totalCash"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="Address"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Address"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="Order Date and Time"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/slot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_time"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="User Slot"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/showProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/slot"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttons"
+            android:layout_marginBottom="5dp"
+            android:text="Show Products"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>

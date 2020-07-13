@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerOrder">
+    <RelativeLayout
+        android:id="@+id/layout_order"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="serif"
+            android:text="PENDING ORDERS :"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_below="@+id/layout_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@android:color/holo_red_light">
+
+        <TextView
+            android:id="@+id/pendingName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Name"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pendingPhone"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="5dp"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="Phone Number"
+            android:textAlignment="textEnd"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pendingCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pendingPhone"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="Total Price"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pendingAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pendingCash"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="Address"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pendingdate_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pendingAddress"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="Order Date and Time"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pendingSlot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pendingdate_time"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:gravity="center"
+            android:text="Time Slot"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pendingshowProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pendingSlot"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttons"
+            android:layout_marginBottom="5dp"
+            android:text="Show Products"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnPayOrder"
+            android:layout_below="@+id/pendingshowProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/buttons"
+            android:layout_marginBottom="5dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Choose Payment Option" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
